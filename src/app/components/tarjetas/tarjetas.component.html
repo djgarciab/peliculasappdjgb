@@ -1,0 +1,14 @@
+<div class="card-columns m-5 animated fadeIn">
+  <div (click)="verPelicula(item)" *ngFor="let item of items" >
+    
+    <img src="http://image.tmdb.org/t/p/w300{{item.poster_path}}" class="card-img-top" alt="...">
+    
+    <div class="card-body">
+      <h5 class="card-title">{{ item.title}}</h5>
+      <p class="card-text">
+          
+          {{item.release_date}}
+      </p>
+    </div>
+  </div>
+</div>

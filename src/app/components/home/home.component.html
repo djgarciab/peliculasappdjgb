@@ -1,0 +1,32 @@
+<!--
+  <div *ngFor="let pelicula of peliculasPopulares">
+    <h5>{{pelicula.title}}</h5>
+
+  </div>
+-->
+
+
+
+<!--
+<app-tarjetas [items]="peliculasPopulares"></app-tarjetas>
+-->
+
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">PelículasApp DJGB</h1>
+        <p class="lead">Aplicación de películas con su información.</p>
+    </div>
+</div>
+<br>
+
+<div class="container">
+
+    <app-galeria [peliculas]="cartelera|slice:0:6" titulo="Películas en cartelera"></app-galeria>
+
+    <app-galeria [peliculas]="populares|slice:0:6" titulo="Películas populares"></app-galeria>
+
+    <app-galeria [peliculas]="popularesNinios|slice:0:6" titulo="Películas populares para los niños"></app-galeria>
+
+</div>
